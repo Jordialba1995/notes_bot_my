@@ -5,7 +5,7 @@ from sqlalchemy import select
 from typing import List, Dict, Any, Optional
 from sqlalchemy.exc import SQLAlchemyError
 
-
+# check for user in bd
 @connection
 async def set_user(session, tg_id: int, username: str, full_name: str) -> Optional[User]:
     try:
